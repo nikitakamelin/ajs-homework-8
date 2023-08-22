@@ -6,8 +6,9 @@ console.log('started!');
 const magician = new Magician('Tanya', 100, 2);
 
 console.log(magician.attack); // 90
-magician.setStoned();
+magician.stoned = true;
 console.log(magician.attack); // 85
 magician.setDistance(4);
-magician.removeStoned();
+magician.stoned = false;
 console.log(magician.attack); // 70
+

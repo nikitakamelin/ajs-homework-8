@@ -6,13 +6,11 @@ export default class Character {
     this.stoned = stoned;
   }
 
-  // Возможность насылать «дурман» на магов и демонов
-  setStoned() {
-    this.stoned = true;
+  get stoned() {
+	return this._stoned;
   }
-
-  removeStoned() {
-    this.stoned = false;
+  set stoned(value) {
+	this._stoned = value;
   }
 
   // Возможность поменять дистанцию атаки
